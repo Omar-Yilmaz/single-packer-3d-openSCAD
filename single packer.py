@@ -1,6 +1,5 @@
 from solid import *
 from solid.utils import *
-import math
 
 # ==========================================
 # 1. CONFIGURATION
@@ -249,5 +248,6 @@ if __name__ == "__main__":
 
     design = assemble_tool()
     scad_render_to_file(design, out_file)
+
 
     print("Done! Open the .scad file to view.")

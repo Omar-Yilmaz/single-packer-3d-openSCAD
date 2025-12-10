@@ -97,15 +97,11 @@ def create_lower_slip_housing():
     inner_sleeve = color(CONFIG['c_sleeve'])(
         cylinder(h=120, r=CONFIG['inner_sleeve_radius'])
     )
-    inner_core = color(CONFIG['c_core'])(
-        cylinder(h=120, r=CONFIG['inner_core_radius'])
-    )
-
+   
     # Assemble
     return union()(
         difference()(outer_body, cutouts),
         inner_sleeve,
-        inner_core
     )
 
 
@@ -251,3 +247,4 @@ if __name__ == "__main__":
 
 
     print("Done! Open the .scad file to view.")
+
